@@ -25,7 +25,7 @@ const adminNews = {
                             type="button"
                             class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         >
-                           Thêm mới bài viết
+                           Thêm mới sản phẩm
                         </button>
                     </a>
                 </div>
@@ -55,6 +55,7 @@ const adminNews = {
                           <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                          Price
                         </th>
+                       
                         
                           
                            
@@ -69,7 +70,7 @@ const adminNews = {
                             <td class="px-6 py-4 whitespace-nowrap">
                               <div class="flex items-center">
                                 <div class="flex-shrink-0 h-10 w-10">
-                                  <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                                  <img class="h-10 w-10 rounded-full" src="http://placeimg.com/640/480/technics" alt="">
                                 </div>
                                 <div class="ml-4">
                                   <div class="text-sm font-medium text-gray-900">
@@ -89,10 +90,11 @@ const adminNews = {
                               <div class="text-sm text-gray-900">${products.desc}</div>
                               
                             </td>
+                            
                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                             
                               <a href="/admin/news/${products.id}" class="text-indigo-600 hover:text-indigo-900">Sửa</a>
-                              <button data-id="${products.id}" class="b bg-indigo-500 hover:bg-indigo-800 text-white text-sm py-2 px-4 rounded"> Xóa </button>
+                              <button data-id="${products.id}" class="b bg-indigo-500 hover:bg-indigo-800 text-white text-sm py-2 px-4 rounded"> Delete </button>
                             </td>
                             
                           </tr>

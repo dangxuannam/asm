@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import { get } from "../api/products";
 
-const deltai = {
+const DetailProductPage = {
     async render(id) {
         const { data } = await get(id);
         return /* html */ `
@@ -25,9 +25,12 @@ const deltai = {
                      <li>Tình trạng: hàng mới 100%</li>
                      <li>Hình thức: Giao hàng toàn quốc & Thanh toán khi nhận hàng</li>
                  </ul>
+                 <div>
+                 <input type="number" id="inputValue" class="border border-gray-500" />
+             </div>
                 <div class="button">
-                    <button>THÊM VÀO GIỎ HÀNG</button>
-                     <button>MUA NGAY</button>
+                    <button id="btnAddToCart">THÊM VÀO GIỎ HÀNG</button>
+                     <button id="btnAddToCart">MUA NGAY</button>
                 </div>
                 </div>
             </div>
@@ -37,4 +40,4 @@ const deltai = {
         `;
     },
 };
-export default deltai;
+export default DetailProductPage;

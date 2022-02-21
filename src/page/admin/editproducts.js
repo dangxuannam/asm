@@ -53,6 +53,7 @@ const adminAdd = {
                   <label for="">Giá sản phẩm</label>
                   <input class="a" type="text" id="desc-post" placeholder="Tên sản phẩm" value="${data.desc}">
                  </div>
+                
                  <button class="add">Update</button>
                 </form>
                   </div>
@@ -96,6 +97,7 @@ const adminAdd = {
                 title: document.querySelector("#title-post").value,
                 img: imgLink || imgPreview.src,
                 desc: document.querySelector("#desc-post").value,
+
             });
             window.location.href = "/#/admin/products";
             reRender(adminNews, "#app");
