@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(236, 234, 234);
+}
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+  width: 100%;
+  margin: auto;
+}
+.header-top{
+  display: flex;
+  justify-content:space-between;
+  background-color: rgb(54, 77, 151);
+  align-items: center;
+  
+}
+
+.header-top a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.header-logo{
+  margin-left: 100px;
+}
+.header-search{
+margin-left: 200px;
+}     
+
+.search input[type=text] {
+padding: 10px 10px;
+width: 500px;
+height: 40px;
+position: relative;
+border-radius: 20px;
+border: 1px solid green;
+}
+.icon-search {
+position: absolute;
+top: 0;
+margin-left: 470px;
+margin-top: 13px;
+
+}
+
+.icon-search button {
+
+border: none;
+font-size: 18px;
+}
+.header-cart{
+font-size: 30px;
+color: white;
+margin-left: 40px;
+}
+.header-signin{
+font-size: 16px;
+margin-right: 20px;
+color: rgb(12, 0, 0);
+}
+.header-signin a{
+  color: black;
+  font-weight: bold;
+ 
+}
+.signin{
+  border: 1px solid rgb(234, 250, 7);
+  border-radius: 8px;
+  background-color: yellow;
+  width: 30px;
+}
+.signup{
+  border: 1px solid rgb(136, 19, 3);
+  border-radius: 8px;
+  background-color: red;
+  width: 30px;
+}
+
+.header-menu{
+  width: 100%;
+ 
+background-color: rgb(253, 255, 255);
+box-shadow: rgb(233, 232, 232) 5px 5px 5px ;
+text-align: center;
+}
+.header-menu  ul.root{
+padding: 20px;
+
+}
+.header-menu ul.root > li{
+display: inline-block;
+
+
+list-style: none;
+}
+.header-menu ul.root > li > a:hover{
+background-color: rgb(81, 131, 240);
+font-weight: bold;
+transition: ease-in 0.30s;
+
+}
+.header-menu ul > li > a{
+font-size: 18px;
+padding: 0 30px;
+text-decoration: none;
+color: rgb(13, 13, 14);
+display: block;
+line-height: 40px;
+}
+ul.submenu{
+
+  background-color: aqua;
+  min-height: 80px;
+  display: none;
+  position: absolute;
+}
+ul.submenu li{
+  list-style: none;
+}
+ul.submenu li a
+{
+    text-transform: none;
+    text-decoration: none;
+    color: rgb(8, 1, 1);
+    display: block;
+    border: 1px solid #ccc;
+    line-height: 40px;
+  
+
+}
+ul.root > li:hover ul.submenu{
+    display: block;
+    
+    background-color: #ffffff;
+    color: red;
+    transform: ease-in 0.35s;
+
+}
+ul.submenu li a:hover{
+    background-color: rgb(8, 8, 8);
+    color: rgb(194, 17, 17);
+    transform: ease-in 0.35s;
+} 
+.banner-dm{
+  display: flex;
+  justify-content:center;
+ 
+  
+}
+.banner{ 
+  padding: 0px 5px;
+}
+.bn1{
+ margin-bottom: 6px;
+}
+.category{
+  padding: 0px 10px;
+  box-shadow: 5px 5px 5px 5px rgb(223, 224, 224);
+  background-color: rgb(255, 255, 255);
+}
+.category h2{
+  font-weight: bold;
+  font-size: 20px;
+}
+.danhmuc{
+  display: block;
+}
+.danhmuc ul li{
+padding: 10px 0px;
+border-bottom: 1px solid rgb(168, 166, 166);
+}
+.danhmuc li:hover{
+  background-color: rgb(6, 60, 97);
+}
+.danhmuc ul li a{
+  color: black;
+  padding-left: 10px;
+}
+.content{
+  margin: auto;
+  width: 1100px;
+}
+.title{
+  margin: 20px 0px;
+  width: 210px;
+}
+.title h2{
+  font-size: 22px;
+ background-color: rgb(59, 117, 241);
+ font-weight: bold;
+  border-radius: 5px;
+}
+.product-news{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  box-shadow: 5px 5px 5px 5px rgb(206, 202, 202);
+  background-color: white;
+  padding: 20px 15px;
+}
+.product img{
+width: 245px;
+}
+.product{
+ display: block;
+ text-align: center;
+}
+.product h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+.product span{
+  color: red;
+}
+.product del{
+  color: rgb(233, 76, 76);
+}
+.product-sale{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  box-shadow: 5px 5px 5px 5px rgb(206, 202, 202);
+  background-color: white;
+  padding: 20px 15px;
+}
+.sale
+{
+  font-size: 13px;
+  background-color: red;
+  padding: 5px 3px;
+  color: white;
+  border-radius: 5px;
+  
+  position: absolute;
+  transform: translateY(-160px);
+}
+.banner-ft{
+  margin-top: 40px;
+}
+.banner-ft img{
+  width: 100%;
+  height: 300px;
+}
+.footer-heading a {
+  text-decoration: none;
+  color: #ffce54;
+  opacity: 0.6;
+}
+.footer {
+  background-color: #336699;
+  border-radius: 5px;
+  display: grid;
+ 
+}
+.footer-content {
+
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 40px 20px 40px;
+}
+
+.footer-heading h2 {
+  color: #ffce54;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer-heading {
+  padding: 20px 10px;
+}
+
+.footer-heading iframe {
+  border-radius: 5px;
+  transform: translateY(5px);
+}
+
+.footer-lisence span {
+  color: #ffce54;
+  opacity: 0.6;
+}
+
+/* chi tiet san pham */
+
+.contentct{
+ margin: auto;
+ width: 1300px;
+}
+.content-img-title{
+  display: flex;
+  
+}
+
+.home a{
+  color: black;
+  text-decoration: none;
+}
+.home a:hover{
+  color: red;
+}
+
+.mota {
+  margin-left: 50px;
+}
+.mota h2{
+  font-size: 28px;
+}
+.mota del{
+  color: crimson;
+}
+
+.mota span{
+  color: rgb(238, 9, 54);
+  font-weight: bold;
+  font-size: 20px;
+}
+.mota ul li{
+  margin-top: 10px;
+  color: rgb(48, 47, 47);
+}
+.button button{
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  font-weight: bold;
+  background-color: rgb(56, 57, 58);
+  color: white;
+  font-size: 16px;
+}
+.button button:hover{
+  background-color: rgb(20, 20, 20);
+}
+.content-mid{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 50px;
+}
+.title{
+  border-radius: 10px;
+  background-color: #33cc99;   
+  color: white;
+  text-align: center;
+ 
+ font-weight: 500;
+}
+.product1{
+ display: flex;
+ margin-top: 20px;
+}
+.product1 img{
+  width: 130px;
+}
+.product1 .name{
+  width: 150px;
+  margin-left: 10px  ;
+}
+.product1 .name del{
+  color: brown;
+}
+.product1 .name a {
+  text-decoration: none;
+  color: rgb(13, 24, 187);
+  font-weight: bold;
+}
+.product1 .name span{
+  color: red;
+  font-weight: bold;
+}
+   
+
+
