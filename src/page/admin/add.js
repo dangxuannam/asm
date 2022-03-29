@@ -50,7 +50,7 @@ const adminAdd = {
                </div>
                <div class="price">
                 <label for="">Giá sản phẩm</label>
-                <input class="a" type="text" id="price-post" placeholder="Gia san pham">
+                <input class="a" type="text" id="desc-post" placeholder="Gia san pham">
                </div>
                
                <button class="add">Thêm mới</button>

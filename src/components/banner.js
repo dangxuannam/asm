@@ -6,12 +6,12 @@ const Banner = {
           <h2>Danh mục sản phẩm</h2>
           <div class="danhmuc">
             <ul>
-              <li><a href="">danh mục 1</a></li>
-              <li><a href="">danh mục 1</a></li>
-              <li><a href="">danh mục 1</a></li>
-              <li><a href="">danh mục 1</a></li>
-              <li><a href="">danh mục 1</a></li>
-              <li><a href="">danh mục 1</a></li>
+              <li><a href="">Máy tính Apple</a></li>
+              <li><a href="">Máy tính Dell</a></li>
+              <li><a href="">Máy tính Apple</a></li>
+              <li><a href="">Máy tính Apple</a></li>
+              <li><a href="">Máy tính Apple</a></li>
+              <li><a href="">Máy tính Acer</a></li>
             </ul>
           </div>
         </div>  

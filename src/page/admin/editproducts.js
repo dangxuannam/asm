@@ -1,8 +1,5 @@
-import axios from "axios";
 import doashboard from "../../components/quantri";
 import { get, update } from "../../api/products";
-import { reRender } from "../../utils";
-import adminNews from ".";
 
 const adminAdd = {
     async render(id) {
@@ -65,42 +62,40 @@ const adminAdd = {
     },
     afterRender(id) {
         const formAdd = document.querySelector("#form-add-post");
-        const imgPreview = document.querySelector("#img-preview");
-        const imgPost = document.querySelector("#img-post");
-        let imgLink = "";
-        const CLOUDINARY_API_URL = "https://api.cloudinary.com/v1_1/dm6frgae8/image/upload";
-        const CLOUDINARY_PRESET = "wcaejvib";
+        // const imgPreview = document.querySelector("#img-preview");
+        // const imgPost = document.querySelector("#img-post");
+        // let imgLink = "";
+        // const CLOUDINARY_API_URL = "https://api.cloudinary.com/v1_1/dm6frgae8/image/upload";
+        // const CLOUDINARY_PRESET = "wcaejvib";
 
-        // handle sự kiện change để xem ảnh trên local
-        imgPost.addEventListener("change", (e) => {
-            imgPreview.src = URL.createObjectURL(e.target.files[0]);
-        });
+        // // handle sự kiện change để xem ảnh trên local
+        // imgPost.addEventListener("change", (e) => {
+        //     imgPreview.src = URL.createObjectURL(e.target.files[0]);
+        // });
 
         formAdd.addEventListener("submit", async (e) => {
             e.preventDefault();
-            const file = imgPost.files[0];
-            if (file) {
-                const formData = new FormData();
-                formData.append("file", file);
-                formData.append("upload_preset", CLOUDINARY_PRESET);
+            // const file = imgPost.files[0];
+            // if (file) {
+            //     const formData = new FormData();
+            //     formData.append("file", file);
+            //     formData.append("upload_preset", CLOUDINARY_PRESET);
 
-                // call api cloudinary
-                const { data } = await axios.post(CLOUDINARY_API_URL, formData, {
+            //     // call api cloudinary
+            //     const { data } = await axios.post(CLOUDINARY_API_URL, formData, {
 
-                });
-                imgLink = data.url;
-            }
+            //     });
+            //     imgLink = data.url;
+            // }
 
             // call api thêm bài viết
             update({
                 id,
                 title: document.querySelector("#title-post").value,
-                img: imgLink || imgPreview.src,
+
                 desc: document.querySelector("#desc-post").value,
 
             });
-            window.location.href = "/#/admin/products";
-            reRender(adminNews, "#app");
         });
     },
 };

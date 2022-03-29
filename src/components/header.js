@@ -25,9 +25,9 @@ const Header = {
     <div class="header-signin" >
     
     ${localStorage.getItem("user") ? `<ul class="flex">
-      <li><a  id="account-email" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white"></a></li>
-      <li><a  id="logout" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white cursor-pointer">Logout</a></li>
-  </ul>` : ""}
+    <li><a  id="account-email" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white"></a></li>
+    <li><a  id="logout" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white cursor-pointer">Logout</a></li>
+</ul>` : ""}
      
       
     </div>

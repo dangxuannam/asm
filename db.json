@@ -169,10 +169,10 @@
   ],
   "products": [
     {
+      "id": 1,
       "title": "san pham 1",
       "img": "http://res.cloudinary.com/dm6frgae8/image/upload/v1645155018/gxfa93kkunpsccgmlyrt.jpg",
-      "desc": "30000000",
-      "id": 1
+      "desc": "300"
     },
     {
       "id": 3,
@@ -199,16 +199,33 @@
       "id": 6
     },
     {
-      "title": "sp22",
-      "img": "http://res.cloudinary.com/dm6frgae8/image/upload/v1645369591/gbyiuhyzt9ijwzbkjjfp.jpg",
-      "desc": "40000000",
-      "id": 9
+      "id": 9,
+      "title": "san pham8",
+      "img": "http://res.cloudinary.com/dm6frgae8/image/upload/v1645414072/bnv4vme92yux0xbisry0.jpg",
+      "desc": "200000"
     },
     {
       "id": 10,
-      "title": "sp22",
-      "img": "http://res.cloudinary.com/dm6frgae8/image/upload/v1645369591/hco31axhipeopzvkpz2w.jpg",
-      "desc": "40000000"
+      "title": "san pham 9",
+      "img": "http://res.cloudinary.com/dm6frgae8/image/upload/v1645414091/bqdbpz6eirfar2kqpu2j.jpg",
+      "desc": "5000000"
+    },
+    {
+      "title": "san pham 10",
+      "img": "http://res.cloudinary.com/dm6frgae8/image/upload/v1645414185/jhbplb6ysfxoxzxcrzne.jpg",
+      "desc": "122222222",
+      "id": 11
+    },
+    {
+      "title": "sp 12",
+      "img": "http://res.cloudinary.com/dm6frgae8/image/upload/v1645777604/sjhcx21zonfesabpiwgq.jpg",
+      "desc": "dep ge",
+      "id": 12
+    },
+    {
+      "title": "s",
+      "desc": "1",
+      "id": 13
     }
   ],
   "users": [
@@ -229,6 +246,12 @@
       "password": "$2a$10$vG4zCg0pea3zeka8YtBNoeewX3VKpS5ZZBKpsn/0NAHLFTfsXUusi",
       "username": "dang xuan nam",
       "id": 4
+    },
+    {
+      "email": "namdxph16521@fpt.edu.vn1",
+      "password": "$2a$10$IvdZtbGyehcb.0vpX1.TWOczAaIGGW4UxwgMFcHhMgLfd/vHaBi3O",
+      "username": "dangxuannam",
+      "id": 5
     }
   ]
 }

@@ -19,7 +19,7 @@ const product = {
           <a href="/newss/${products.id}"> <img src="${products.img}" alt=""></a>
             <p class="sale">Giảm 20%</p>
             <h3>${products.title}</h3>
-            <span>${products.desc}</span>
+            <span>${products.desc}vnd</span>
             <del>30000đ</del>
           </div>
           

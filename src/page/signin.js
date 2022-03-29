@@ -44,6 +44,7 @@ const Signin = {
       </section>
         `;
     },
+
     afterRender() {
         const formSignin = document.querySelector("#formSignin");
         formSignin.addEventListener("submit", async (e) => {
